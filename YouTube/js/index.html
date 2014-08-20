@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex,nofollow" />
+
+    <title>VHL integration with YouTube player</title>
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+
+<!-- Let's put a video on the page -->
+<iframe id="player"
+        src="//www.youtube.com/embed/bzjwnZDScxo?enablejsapi=1&rel=0"
+        width="640" height="360" frameborder="0" allowTransparency="true">
+</iframe>
+
+<!-- Bring in the tracking libraries -->
+<script language="JavaScript" type="text/javascript" src="lib/visitor-api/VisitorAPI.js"></script>
+<script language="JavaScript" type="text/javascript" src="lib/app-measurement/AppMeasurement.js"></script>
+<script language="JavaScript" type="text/javascript" src="lib/video-heartbeat/VideoHeartbeat.js"></script>
+
+<!-- Load the application files -->
+<script language="JavaScript" type="text/javascript" src="script/app/configuration.js"></script>
+<script language="JavaScript" type="text/javascript" src="script/app/utils/event.bus.js"></script>
+<script language="JavaScript" type="text/javascript" src="script/app/player/video.player.js"></script>
+<script language="JavaScript" type="text/javascript" src="script/app/analytics/video.player.delegate.js"></script>
+<script language="JavaScript" type="text/javascript" src="script/app/analytics/video.analytics.provider.js"></script>
+<script language="JavaScript" type="text/javascript" src="script/main.js"></script>
+
+</body>
+</html>
